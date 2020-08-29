@@ -1,0 +1,115 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 600px;
+  height: 600px;
+  perspective: 1000px;
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  margin: 3px;
+  border: 3px;
+}
+
+.flip-card-back {
+  background-color: #4682B4;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 20px;
+}
+
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 2px;
+}
+
+.links {
+  text-align : center;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 5%;
+}
+
+li {
+  display: inline;
+  color: green;
+}
+
+h1 {
+  text-align: center;
+  font-family: Georgia,Cambria,"Times New Roman",Times, serif;
+  letter-spacing: -.003em;
+  line-height: 1.5;
+  position: relative;
+  top: -10px;
+  font-size: 40px;
+}
+
+p  {
+  font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+  letter-spacing:-.003em;
+  line-height: 1.5;
+  font-size:20px;
+}
+
+h3 {
+  font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+  letter-spacing: -.003em;
+  line-height: 2.0;
+  font-size:20px;
+  text-align:center;
+}
+
+img {
+  width: 120px;
+  height: 120px;
+  padding: 1px;
+  background-color: #666;
+  filter: grayscale(50%);
+  border-radius: 20px;
+}
+
+
+
+
